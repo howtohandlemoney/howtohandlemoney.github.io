@@ -1,0 +1,24 @@
+{
+  "name": "how-to-handle-money",
+  "version": "1.0.0",
+  "description": "General guidance found in the subreddit /r/personalfinance",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "prettier --check ."
+  },
+  "author": "ewolfe <e@ewolfe.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "lint-staged": "^10.5.4",
+    "live-server": "^1.2.1",
+    "prettier": "2.2.1",
+    "simple-git-hooks": "^2.2.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
