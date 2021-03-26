@@ -1,0 +1,632 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to Handle Money</title>
+    <style>
+      /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+      }
+
+      :root {
+        -moz-tab-size: 4;
+        tab-size: 4;
+      }
+
+      html {
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+
+      hr {
+        height: 0;
+        color: inherit;
+      }
+
+      abbr[title] {
+        text-decoration: underline dotted;
+      }
+
+      b,
+      strong {
+        font-weight: bolder;
+      }
+
+      code,
+      kbd,
+      pre,
+      samp {
+        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono",
+          Menlo, monospace;
+        font-size: 1em;
+      }
+
+      small {
+        font-size: 80%;
+      }
+
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+
+      sub {
+        bottom: -0.25em;
+      }
+
+      sup {
+        top: -0.5em;
+      }
+
+      table {
+        text-indent: 0;
+        border-color: inherit;
+      }
+
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+
+      button,
+      select {
+        text-transform: none;
+      }
+
+      [type="button"],
+      [type="reset"],
+      [type="submit"],
+      button {
+        -webkit-appearance: button;
+      }
+
+      ::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+
+      :-moz-focusring {
+        outline: 1px dotted ButtonText;
+      }
+
+      :-moz-ui-invalid {
+        box-shadow: none;
+      }
+
+      legend {
+        padding: 0;
+      }
+
+      progress {
+        vertical-align: baseline;
+      }
+
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+
+      [type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+
+      summary {
+        display: list-item;
+      }
+
+      /* "how-to-handle-money" css */
+      header,
+      main,
+      footer {
+        margin: 1rem auto;
+        max-width: 600px;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .grey {
+        border-color: #47576d;
+      }
+
+      .red {
+        border-color: #e93f33;
+      }
+
+      .yellow {
+        border-color: #f7c133;
+      }
+
+      .green {
+        border-color: #5bb359;
+      }
+
+      .blue {
+        border-color: #47b2f1;
+      }
+
+      .darkBlue {
+        border-color: #2073c2;
+      }
+
+      .purple {
+        border-color: #7435a2;
+      }
+
+      header {
+        padding: 2rem 0;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li a {
+        color: #000;
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 3px solid;
+        border-radius: 1rem;
+        display: block;
+        text-decoration: none;
+        font-style: italic;
+      }
+
+      hr {
+        border: 2px solid;
+        margin: 2rem 0;
+      }
+
+      section {
+        border: 3px solid;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+
+      section h3 {
+        margin: 0 0 0.5rem;
+      }
+
+      section h3 a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .subsection {
+        margin-left: 1rem;
+      }
+
+      .subsubsection {
+        margin-left: 2rem;
+      }
+
+      footer {
+        color: #8a8577;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>How to Handle Money</h1>
+      <h2>Personal Income Spending Flowchart - United States</h2>
+      <span>Do the steps in order and don't skip steps that apply to you.</span>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li>
+            <a href="#budget" class="grey">
+              Step 0: Budget & reduce expenses, set realistic goals
+            </a>
+          </li>
+          <li>
+            <a href="#small-emergency-fund" class="red">
+              Step 1: Build an emergency fund
+            </a>
+          </li>
+          <li>
+            <a href="#employer-matching" class="yellow">
+              Step 2: Employer-sponsored matching funds
+            </a>
+          </li>
+          <li>
+            <a href="#high-interest-debt" class="green">
+              Step 3: Pay down high/moderate interest debt
+            </a>
+          </li>
+          <li>
+            <a href="#save" class="blue">
+              Step 4: Savings for retirement in an IRA & higher education
+              expenses
+            </a>
+          </li>
+          <li>
+            <a href="#save-more" class="darkBlue">
+              Step 5: Save more for retirement
+            </a>
+          </li>
+          <li>
+            <a href="#keep-saving" class="purple">
+              Step 6: Save for other goals & advanced methods
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+      <section class="grey">
+        <h3 id="budget"><a href="#budget">Create Budget</a></h3>
+        <span>
+          (Fundamental to a solid financial footing knowing where your money is
+          going, budgeting helps you see your sources of income less your
+          expenses.)
+        </span>
+      </section>
+      <section class="grey">
+        <h3 id="pay-rent-mortgage">
+          <a href="#pay-rent-mortgage">Pay Rent/Mortgage</a>
+        </h3>
+        <span>(Including renters or homeowners insurance, if required)</span>
+      </section>
+      <section class="grey">
+        <h3 id="pay-essential-items">
+          <a href="#pay-essential-items">Pay Essential Items</a>
+        </h3>
+        <span>(Power, water, heat, toiletries, etc.)</span>
+      </section>
+      <section class="grey">
+        <h3 id="pay-income-earning-expenses">
+          <a href="#pay-income-earning-expenses">Pay Income Earning Expenses</a>
+        </h3>
+        <span>
+          (Necessary transportation expenses, possibly Internet/phone, anything
+          required to continue earning income)
+        </span>
+      </section>
+      <section class="grey">
+        <h3 id="pay-health-care">
+          <a href="#pay-health-care">Pay Health Care</a>
+        </h3>
+        <span>(Health insurance and health care expenses)</span>
+      </section>
+      <section class="grey">
+        <h3 id="pay-debt-minimum">
+          <a href="#pay-debt-minimum">
+            Make Minimum Payments On All Debts & Loans
+          </a>
+        </h3>
+        <span>(Student loans, credit cards, etc.)</span>
+      </section>
+      <section class="red">
+        <h3 id="small-emergency-fund">
+          <a href="#small-emergency-fund">Build Small Emergency Fund</a>
+        </h3>
+        <span>
+          (Either $1,000 or one months' worth of expenses, whichever is greater;
+          use a savings or checking account.)
+        </span>
+      </section>
+      <section class="red">
+        <h3 id="pay-non-essential-bills">
+          <a href="#pay-non-essential-bills">
+            Pay Any Non-Essential Bills in Full
+          </a>
+        </h3>
+        <span>(Cable, Internet, phone, etc.)</span>
+      </section>
+      <section class="yellow">
+        <h3 id="employer-match">
+          <a href="#employer-match">
+            Does your employer offer a retirement account with an employer
+            match?
+          </a>
+        </h3>
+      </section>
+      <section class="yellow subsection">
+        <h3 id="contribute-to-employer-retirement">
+          <a href="#contribute-to-employer-retirement">
+            <strong>Yes:</strong>
+            Contribute the amount needed to get the full employer match, but
+            nothing above that amount.
+          </a>
+        </h3>
+      </section>
+      <section class="yellow subsection">
+        <h3 id="ask-for-matching">
+          <a href="#ask-for-matching">
+            <strong>No:</strong>
+            Move on the next step and consider asking your employer to match
+            contributions.
+          </a>
+        </h3>
+      </section>
+      <section class="green">
+        <h3 id="high-interest-debt">
+          <a href="#high-interest-debt">Do you have any high interest debt?</a>
+        </h3>
+        <span>(i.e., debt with an interest rate of 10% or higher)</span>
+      </section>
+      <section class="green subsection">
+        <h3 id="avalanche-vs-snowball">
+          <a href="#avalanche-vs-snowball">
+            <strong>Yes:</strong>
+            Evaluate the merits of the "Avalanche" and "Snowball" methods and
+            their advantages in your personal finance financial/pyschological
+            situation and apply accordingly to pay off these debts.
+          </a>
+        </h3>
+      </section>
+      <section class="green subsection">
+        <h3 id="no-high-interest-debt">
+          <a href="#no-high-interest-debt">
+            <strong>No:</strong>
+            Move on to the next step.
+          </a>
+        </h3>
+      </section>
+      <section class="red">
+        <h3 id="increase-emergency-fund">
+          <a href="#increase-emergency-fund">
+            Increase Emergency Fund 3-6 Months Living Expenses
+          </a>
+        </h3>
+        <span>(Use a savings or checking account)</span>
+      </section>
+      <section class="green">
+        <h3 id="moderate-interest-debt">
+          <a href="#moderate-interest-debt">
+            Do you have any moderate interest debt?
+          </a>
+        </h3>
+        <span>
+          (i.e., remaining debt over 4-5% interest rate, excluding mortgage)
+        </span>
+      </section>
+      <section class="green subsection">
+        <h3 id="avalanche-vs-snowball-moderate-debt">
+          <a href="#avalanche-vs-snowball-moderate-debt">
+            <strong>Yes:</strong>
+            Evaluate the merits of the "Avalanche" and "Snowball" methods and
+            their advantages in your personal financial/psychological situation
+            and apply accordingly to pay off these debts.
+          </a>
+        </h3>
+      </section>
+      <section class="green subsection">
+        <h3 id="no-moderate-interest-debt">
+          <a href="#no-moderate-interest-debt">
+            <strong>No:</strong>
+            Move on to the next step.
+          </a>
+        </h3>
+      </section>
+      <section class="blue">
+        <h3 id="ira">
+          <a href="#ira">
+            Evaluate the merits of a Roth vs Traditional IRA in the context of
+            your personal financial situation and max the yearly contributions
+            accordingly.
+          </a>
+        </h3>
+      </section>
+      <section class="blue">
+        <h3 id="large-required-purchases">
+          <a href="#large-required-purchases">
+            Are you expecting any large,
+            <em>required</em>
+            purchases or personal investments in the near future?
+          </a>
+        </h3>
+        <span>
+          (College, professional certifications, a car so you can get to work,
+          etc.)
+        </span>
+      </section>
+      <section class="blue subsection">
+        <h3 id="large-purchase-savings">
+          <a href="#large-purchase-savings">
+            <strong>Yes:</strong>
+            Save the amount needed for these expenses in a savings or checking
+            account.
+          </a>
+        </h3>
+      </section>
+      <section class="blue subsection">
+        <h3 id="no-large-purchases">
+          <a href="#no-large-purchases">
+            <strong>No:</strong>
+            Move on to the next step.
+          </a>
+        </h3>
+      </section>
+      <section class="darkBlue">
+        <h3 id="save-15-percent">
+          <a href="#save-15-percent">
+            Are you currently saving
+            <em>at least</em>
+            15% of your pre-tax income for retirement?
+          </a>
+        </h3>
+        <span>
+          (Total contributions to all retirement accounts; note that you may
+          need to save more if you are behind on retirement savings.)
+        </span>
+      </section>
+      <section class="darkBlue subsection">
+        <h3 id="saving-15-percent">
+          <a href="#saving-15-percent">
+            <strong>Yes:</strong>
+            Move on to HSA Investing
+          </a>
+        </h3>
+        <span><a href="#hsa">(HSA Investing)</a></span>
+      </section>
+      <section class="darkBlue subsection">
+        <h3 id="not-saving-15-percent">
+          <a href="#not-saving-15-percent">
+            <strong>No:</strong>
+            Does your employer offer a 401(k), 403(b), or similar retirement
+            plan into which you could save more money?
+          </a>
+        </h3>
+      </section>
+      <section class="darkBlue subsubsection">
+        <h3 id="employer-retirement-plan">
+          <a href="#employer-retirement-plan">
+            <strong>Yes:</strong>
+            Increase contributions until you have reached 15% pre-tax income
+            being saved for retirement.
+          </a>
+        </h3>
+      </section>
+      <section class="darkBlue subsubsection">
+        <h3 id="self-employed">
+          <a href="#self-employed">
+            <strong>No:</strong>
+            If self-employed, contribute to an Individual 401(k), SEP-IRA, or
+            SIMPLE IRA to reach 15% pre-tax income saved; if not self employed,
+            contribute to a taxable account to reach this goal.
+          </a>
+        </h3>
+      </section>
+      <section class="purple">
+        <h3 id="hsa">
+          <a href="#hsa">
+            Do you have a qualified high-deductible health plan and are thus
+            eligible for an investable HSA?
+          </a>
+        </h3>
+      </section>
+      <section class="purple subsection">
+        <h3 id="max-hsa">
+          <a href="#max-hsa">
+            <strong>Yes:</strong>
+            Max yearly HSA contributions
+          </a>
+        </h3>
+      </section>
+      <section class="purple subsection">
+        <h3 id="college">
+          <a href="#college">
+            <strong>No:</strong>
+            Do you have children and wish to help pay for some or all of their
+            college expenses?
+          </a>
+        </h3>
+      </section>
+      <section class="purple subsubsection">
+        <h3 id="529-plan">
+          <a href="#529-plan">
+            <strong>Yes:</strong>
+            Evaluate available savings/investment options, such as a 529 plan,
+            and contribute accordingly.
+          </a>
+        </h3>
+      </section>
+      <section class="purple subsubsection">
+        <h3 id="personal-goals">
+          <a href="#personal-goals">
+            <strong>No:</strong>
+            At this point, you have some options on how to proceed, and it is
+            completely up to you and your personal goals and desires.
+          </a>
+        </h3>
+      </section>
+      <section class="purple">
+        <h3 id="retire-early">
+          <a href="#retire-early">Would you like to retire early?</a>
+        </h3>
+        <span>
+          Max out 401(k), 403(b), or other employer sponsored account, consider
+          the "mega backdoor Roth IRA", then use a taxable account.
+        </span>
+      </section>
+      <section class="purple">
+        <h3 id="immediate-goals">
+          <a href="#immediate-goals">Do you have more immediate goals?</a>
+        </h3>
+        <span>
+          <strong>
+            Use savings for goals sooner than 3-5 years, a conservative mix of
+            stocks and bonds for goals more than 3-5 years away.
+          </strong>
+          <br />
+          (Common examples include down payments for homes, saving for vehicles,
+          paying down a mortgage, and vacation funds.)
+        </span>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <strong><em>A note on Entertainment Expenses:</em></strong>
+        <br />
+        Entertainment expenses are certainly discretionary, however, if you are
+        dedicated to achieving financial health and getting rid of debt, it is
+        best to keep discretionary spending at an absolute minimum until your
+        high interest debt is paid off. Informed decision making (paired with
+        common sense) can be a great tool to employ while forming a healthy
+        financial strategy; use it!
+      </p>
+      <p>
+        <strong><em>Disclaimer:</em></strong>
+        This chart is a supplemental guide, there are circumstances where you
+        may need to alter your approach (such as earning income that exceeds the
+        Roth IRA limit, thus creating need to pursue Backdoor Roth
+        contributions). To make optimal financial decisions for your unique
+        situation (Snowball vs. Avalanche, Roth vs. Traditional, etc.), it is
+        vital to spend the time cultivating the necessary knowledge to enable
+        you to move forward from an informed place of strength.
+      </p>
+      <p>
+        <small>
+          Created by /u/atlasvoid, 2016; based off flowchart created by
+          /u/beached89
+        </small>
+      </p>
+      <p>
+        <small>
+          Favicon is "gold by Caesar Rizky Kurniawan from the Noun Project"
+        </small>
+      </p>
+      <a href="https://www.reddit.com/r/personalfinance/wiki/commontopics">
+        https://www.reddit.com/r/personalfinance/wiki/commontopics
+      </a>
+    </footer>
+  </body>
+</html>
